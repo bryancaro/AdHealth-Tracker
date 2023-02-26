@@ -34,4 +34,12 @@ final class HomeUseCasesOutputComposer: HomeUseCasesOutputProtocol {
     func onDisappearSuccess() {
         outputs.forEach({ $0.onDisappearSuccess() })
     }
+    
+    func getHealthGoalsSuccess(data: HealthGoalsModel) {
+        outputs.forEach({ $0.getHealthGoalsSuccess(data: data) })
+    }
+    
+    func getHealthGoalsFailed(error: Error) {
+        outputs.forEach({ $0.getHealthGoalsFailed(error: error)})
+    }
 }

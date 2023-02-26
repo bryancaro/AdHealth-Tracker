@@ -20,4 +20,12 @@ final class FirebaseAnalyticsHomeTracker: HomeUseCasesOutputProtocol {
     func onDisappearSuccess() {
         print("[🟢] [FirebaseAnalyticsHomeTracker] [onDisappear]")
     }
+    
+    func getHealthGoalsSuccess(data: HealthGoalsModel) {
+        // SEND ANALYTICS MANAGER
+    }
+    
+    func getHealthGoalsFailed(error: Error) {
+        // SEND ANALYTICS MANAGER
+    }
 }

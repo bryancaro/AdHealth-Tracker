@@ -14,6 +14,7 @@ import Foundation
 
 final class HomeViewModel: ObservableObject {
     @Published var isLoading = true
+    @Published var appError: AppError?
     
     private var repository: HomeUseCasesProtocol!
     //  MARK: - Lifecycle
@@ -41,15 +42,27 @@ final class HomeViewModel: ObservableObject {
 extension HomeViewModel: HomeUseCasesOutputProtocol {
     func onAppearSuccess() {
         print("[🟢] [HomeViewModel] [onAppear]")
+        Task {
+           await repository.getHealthGoals()
+        }
     }
     
     func onDisappearSuccess() {
         print("[🟢] [HomeViewModel] [onDisappear]")
     }
     
+    func getHealthGoalsSuccess(data: HealthGoalsModel) {
+        print(data)
+    }
+    
+    func getHealthGoalsFailed(error: Error) {
+        defaultError(error.localizedDescription)
+    }
+    
     func defaultError(_ errorString: String) {
         print("[🔴] [HomeViewModel] [Error]: \(errorString)")
         haptic(type: .error)
         isLoading = false
+        appError = AppError(errorString: errorString)
     }
 }

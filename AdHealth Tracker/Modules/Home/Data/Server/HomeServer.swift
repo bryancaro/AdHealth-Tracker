@@ -12,8 +12,14 @@
 
 import Foundation
 
-protocol HomeServerProtocol {}
+protocol HomeServerProtocol {
+    func getHealthGoals() async throws -> HealthGoalsResponse
+}
 
 final class HomeServer: Network, HomeServer.ServerCalls {
     typealias ServerCalls = HomeServerProtocol
+    
+    func getHealthGoals() async throws -> HealthGoalsResponse {
+        try await manager.getHealthGoals()
+    }
 }

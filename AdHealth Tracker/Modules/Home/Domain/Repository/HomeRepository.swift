@@ -40,4 +40,16 @@ extension HomeRepository: HomeUseCasesProtocol {
         delegate?.onDisappearSuccess()
         output.onDisappearSuccess()
     }
+    
+    func getHealthGoals() async {
+        do {
+            let response = try await server.getHealthGoals()
+            let data = HealthGoalsModel(response)
+            delegate?.getHealthGoalsSuccess(data: data)
+            output.getHealthGoalsSuccess(data: data)
+        } catch let error {
+            delegate?.getHealthGoalsFailed(error: error)
+            output.getHealthGoalsFailed(error: error)
+        }
+    }
 }

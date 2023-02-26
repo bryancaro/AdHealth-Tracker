@@ -15,4 +15,6 @@ import Foundation
 protocol HomeUseCasesOutputProtocol: AnyObject {
     func onAppearSuccess()
     func onDisappearSuccess()
+    func getHealthGoalsSuccess(data: HealthGoalsModel)
+    func getHealthGoalsFailed(error: Error)
 }

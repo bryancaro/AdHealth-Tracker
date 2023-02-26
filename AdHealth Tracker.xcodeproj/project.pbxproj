@@ -51,6 +51,7 @@
 		11F2EA0829ABDE65003A524D /* HomeUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9FE29ABDE65003A524D /* HomeUseCases.swift */; };
 		11F2EA0B29ABDF45003A524D /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 11F2EA0A29ABDF45003A524D /* ConfettiSwiftUI */; };
 		11F2EA0E29ABE4EB003A524D /* HealthGoals-Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2EA0D29ABE4EB003A524D /* HealthGoals-Model.swift */; };
+		11F2EA1029ABE78A003A524D /* HomeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2EA0F29ABE78A003A524D /* HomeServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		11F2E9FD29ABDE65003A524D /* HomeUseCasesOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeUseCasesOutput.swift; sourceTree = "<group>"; };
 		11F2E9FE29ABDE65003A524D /* HomeUseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeUseCases.swift; sourceTree = "<group>"; };
 		11F2EA0D29ABE4EB003A524D /* HealthGoals-Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthGoals-Model.swift"; sourceTree = "<group>"; };
+		11F2EA0F29ABE78A003A524D /* HomeServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -397,6 +399,7 @@
 		11F2E9AB29ABDE2D003A524D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				11F2EA0F29ABE78A003A524D /* HomeServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -467,8 +470,8 @@
 			isa = PBXGroup;
 			children = (
 				11F2E9EA29ABDE65003A524D /* UI */,
-				11F2E9EF29ABDE65003A524D /* Data */,
 				11F2E9F829ABDE65003A524D /* Domain */,
+				11F2E9EF29ABDE65003A524D /* Data */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -476,8 +479,8 @@
 		11F2E9EA29ABDE65003A524D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				11F2E9EB29ABDE65003A524D /* ViewModel */,
 				11F2E9ED29ABDE65003A524D /* View */,
+				11F2E9EB29ABDE65003A524D /* ViewModel */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -544,8 +547,8 @@
 		11F2E9F829ABDE65003A524D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				11F2E9F929ABDE65003A524D /* Repository */,
 				11F2E9FB29ABDE65003A524D /* UseCases */,
+				11F2E9F929ABDE65003A524D /* Repository */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -746,6 +749,7 @@
 				11F2E9DD29ABDE2D003A524D /* AnalyticsEvent.swift in Sources */,
 				11F2E9E129ABDE2D003A524D /* ConfigReader.swift in Sources */,
 				11F2EA0129ABDE65003A524D /* Home_Mocks.swift in Sources */,
+				11F2EA1029ABE78A003A524D /* HomeServices.swift in Sources */,
 				11F2E9DA29ABDE2D003A524D /* NetworkDecoder.swift in Sources */,
 				11F2E9DF29ABDE2D003A524D /* FirebaseAnalyticsEngine.swift in Sources */,
 				11F2E9C929ABDE2D003A524D /* PreferencesKey.swift in Sources */,

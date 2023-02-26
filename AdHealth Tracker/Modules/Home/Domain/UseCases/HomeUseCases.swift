@@ -17,4 +17,5 @@ protocol HomeUseCasesProtocol: AnyObject {
     
     func onAppear()
     func onDisappear()
+    func getHealthGoals() async
 }

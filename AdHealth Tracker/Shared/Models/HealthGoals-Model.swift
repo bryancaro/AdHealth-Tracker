@@ -87,3 +87,6 @@ struct RewardModel {
 }
 
 //  MARK: - EXTENSION MODEL
+extension HealthGoalsModel {
+    static let empty = HealthGoalsModel(goals: [GoalModel]())
+}
