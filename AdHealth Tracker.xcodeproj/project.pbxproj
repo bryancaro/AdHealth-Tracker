@@ -50,6 +50,7 @@
 		11F2EA0729ABDE65003A524D /* HomeUseCasesOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9FD29ABDE65003A524D /* HomeUseCasesOutput.swift */; };
 		11F2EA0829ABDE65003A524D /* HomeUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9FE29ABDE65003A524D /* HomeUseCases.swift */; };
 		11F2EA0B29ABDF45003A524D /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 11F2EA0A29ABDF45003A524D /* ConfettiSwiftUI */; };
+		11F2EA0E29ABE4EB003A524D /* HealthGoals-Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2EA0D29ABE4EB003A524D /* HealthGoals-Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		11F2E9FC29ABDE65003A524D /* HomeUseCasesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeUseCasesFactory.swift; sourceTree = "<group>"; };
 		11F2E9FD29ABDE65003A524D /* HomeUseCasesOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeUseCasesOutput.swift; sourceTree = "<group>"; };
 		11F2E9FE29ABDE65003A524D /* HomeUseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeUseCases.swift; sourceTree = "<group>"; };
+		11F2EA0D29ABE4EB003A524D /* HealthGoals-Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthGoals-Model.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				11F2E97B29ABDE2D003A524D /* AppError-Model.swift */,
+				11F2EA0D29ABE4EB003A524D /* HealthGoals-Model.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -729,6 +732,7 @@
 				11F2E9CE29ABDE2D003A524D /* BackButtonView.swift in Sources */,
 				11F2E9C629ABDE2D003A524D /* UIImpactFeedBack.swift in Sources */,
 				11F2E9D429ABDE2D003A524D /* Me.swift in Sources */,
+				11F2EA0E29ABE4EB003A524D /* HealthGoals-Model.swift in Sources */,
 				11F2E9DE29ABDE2D003A524D /* CloudKitAnalyticsEngine.swift in Sources */,
 				11F2E9D529ABDE2D003A524D /* MeView.swift in Sources */,
 				11F2EA0229ABDE65003A524D /* HomeServer.swift in Sources */,
