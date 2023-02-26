@@ -11,7 +11,7 @@ import SwiftUI
 struct AdHealth_TrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

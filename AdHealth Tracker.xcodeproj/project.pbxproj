@@ -8,12 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		11F2E94E29ABDC6D003A524D /* AdHealth_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E94D29ABDC6D003A524D /* AdHealth_TrackerApp.swift */; };
-		11F2E95029ABDC6D003A524D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E94F29ABDC6D003A524D /* ContentView.swift */; };
 		11F2E95229ABDC6E003A524D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F2E95129ABDC6E003A524D /* Assets.xcassets */; };
 		11F2E95529ABDC6E003A524D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F2E95429ABDC6E003A524D /* Preview Assets.xcassets */; };
 		11F2E95F29ABDC6F003A524D /* AdHealth_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E95E29ABDC6F003A524D /* AdHealth_TrackerTests.swift */; };
 		11F2E96929ABDC6F003A524D /* AdHealth_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E96829ABDC6F003A524D /* AdHealth_TrackerUITests.swift */; };
 		11F2E96B29ABDC6F003A524D /* AdHealth_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E96A29ABDC6F003A524D /* AdHealth_TrackerUITestsLaunchTests.swift */; };
+		11F2E9C129ABDE2D003A524D /* AppError-Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E97B29ABDE2D003A524D /* AppError-Model.swift */; };
+		11F2E9C229ABDE2D003A524D /* Dictionary-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E97D29ABDE2D003A524D /* Dictionary-Extension.swift */; };
+		11F2E9C329ABDE2D003A524D /* TimeInterval-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E97E29ABDE2D003A524D /* TimeInterval-Extension.swift */; };
+		11F2E9C429ABDE2D003A524D /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E97F29ABDE2D003A524D /* String-Extension.swift */; };
+		11F2E9C529ABDE2D003A524D /* Animation-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E98029ABDE2D003A524D /* Animation-Extension.swift */; };
+		11F2E9C629ABDE2D003A524D /* UIImpactFeedBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E98329ABDE2D003A524D /* UIImpactFeedBack.swift */; };
+		11F2E9C829ABDE2D003A524D /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E98729ABDE2D003A524D /* StyleGuide.swift */; };
+		11F2E9C929ABDE2D003A524D /* PreferencesKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E98929ABDE2D003A524D /* PreferencesKey.swift */; };
+		11F2E9CE29ABDE2D003A524D /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E99429ABDE2D003A524D /* BackButtonView.swift */; };
+		11F2E9D329ABDE2D003A524D /* MeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E99C29ABDE2D003A524D /* MeViewModel.swift */; };
+		11F2E9D429ABDE2D003A524D /* Me.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E99E29ABDE2D003A524D /* Me.swift */; };
+		11F2E9D529ABDE2D003A524D /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9A029ABDE2D003A524D /* MeView.swift */; };
+		11F2E9D629ABDE2D003A524D /* ExpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9A329ABDE2D003A524D /* ExpButton.swift */; };
+		11F2E9D729ABDE2D003A524D /* NetworkControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9A629ABDE2D003A524D /* NetworkControllerProtocol.swift */; };
+		11F2E9D829ABDE2D003A524D /* NetworkEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9A729ABDE2D003A524D /* NetworkEndpoint.swift */; };
+		11F2E9D929ABDE2D003A524D /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9A829ABDE2D003A524D /* NetworkResponse.swift */; };
+		11F2E9DA29ABDE2D003A524D /* NetworkDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9A929ABDE2D003A524D /* NetworkDecoder.swift */; };
+		11F2E9DB29ABDE2D003A524D /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9AA29ABDE2D003A524D /* NetworkController.swift */; };
+		11F2E9DD29ABDE2D003A524D /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9AF29ABDE2D003A524D /* AnalyticsEvent.swift */; };
+		11F2E9DE29ABDE2D003A524D /* CloudKitAnalyticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9B129ABDE2D003A524D /* CloudKitAnalyticsEngine.swift */; };
+		11F2E9DF29ABDE2D003A524D /* FirebaseAnalyticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9B229ABDE2D003A524D /* FirebaseAnalyticsEngine.swift */; };
+		11F2E9E029ABDE2D003A524D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11F2E9B429ABDE2D003A524D /* Localizable.strings */; };
+		11F2E9E129ABDE2D003A524D /* ConfigReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9B829ABDE2D003A524D /* ConfigReader.swift */; };
+		11F2E9E229ABDE2D003A524D /* ConfigurationDev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11F2E9BA29ABDE2D003A524D /* ConfigurationDev.plist */; };
+		11F2E9E429ABDE2D003A524D /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9BD29ABDE2D003A524D /* ConfigurationManager.swift */; };
+		11F2E9E529ABDE2D003A524D /* ConfigurationProd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11F2E9BF29ABDE2D003A524D /* ConfigurationProd.plist */; };
+		11F2E9FF29ABDE65003A524D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9EC29ABDE65003A524D /* HomeViewModel.swift */; };
+		11F2EA0029ABDE65003A524D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9EE29ABDE65003A524D /* HomeView.swift */; };
+		11F2EA0129ABDE65003A524D /* Home_Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9F129ABDE65003A524D /* Home_Mocks.swift */; };
+		11F2EA0229ABDE65003A524D /* HomeServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9F329ABDE65003A524D /* HomeServer.swift */; };
+		11F2EA0329ABDE65003A524D /* HomeLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9F529ABDE65003A524D /* HomeLocal.swift */; };
+		11F2EA0429ABDE65003A524D /* FirebaseAnalyticsHomeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9F729ABDE65003A524D /* FirebaseAnalyticsHomeTracker.swift */; };
+		11F2EA0529ABDE65003A524D /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9FA29ABDE65003A524D /* HomeRepository.swift */; };
+		11F2EA0629ABDE65003A524D /* HomeUseCasesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9FC29ABDE65003A524D /* HomeUseCasesFactory.swift */; };
+		11F2EA0729ABDE65003A524D /* HomeUseCasesOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9FD29ABDE65003A524D /* HomeUseCasesOutput.swift */; };
+		11F2EA0829ABDE65003A524D /* HomeUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E9FE29ABDE65003A524D /* HomeUseCases.swift */; };
+		11F2EA0B29ABDF45003A524D /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 11F2EA0A29ABDF45003A524D /* ConfettiSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +72,6 @@
 /* Begin PBXFileReference section */
 		11F2E94A29ABDC6D003A524D /* AdHealth Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AdHealth Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F2E94D29ABDC6D003A524D /* AdHealth_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdHealth_TrackerApp.swift; sourceTree = "<group>"; };
-		11F2E94F29ABDC6D003A524D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		11F2E95129ABDC6E003A524D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11F2E95429ABDC6E003A524D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		11F2E95A29ABDC6F003A524D /* AdHealth TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AdHealth TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +79,44 @@
 		11F2E96429ABDC6F003A524D /* AdHealth TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AdHealth TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F2E96829ABDC6F003A524D /* AdHealth_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdHealth_TrackerUITests.swift; sourceTree = "<group>"; };
 		11F2E96A29ABDC6F003A524D /* AdHealth_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdHealth_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		11F2E97729ABDD24003A524D /* AdHealth-Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AdHealth-Tracker-Info.plist"; sourceTree = SOURCE_ROOT; };
+		11F2E97B29ABDE2D003A524D /* AppError-Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppError-Model.swift"; sourceTree = "<group>"; };
+		11F2E97D29ABDE2D003A524D /* Dictionary-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary-Extension.swift"; sourceTree = "<group>"; };
+		11F2E97E29ABDE2D003A524D /* TimeInterval-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval-Extension.swift"; sourceTree = "<group>"; };
+		11F2E97F29ABDE2D003A524D /* String-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extension.swift"; sourceTree = "<group>"; };
+		11F2E98029ABDE2D003A524D /* Animation-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animation-Extension.swift"; sourceTree = "<group>"; };
+		11F2E98329ABDE2D003A524D /* UIImpactFeedBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImpactFeedBack.swift; sourceTree = "<group>"; };
+		11F2E98729ABDE2D003A524D /* StyleGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
+		11F2E98929ABDE2D003A524D /* PreferencesKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesKey.swift; sourceTree = "<group>"; };
+		11F2E99429ABDE2D003A524D /* BackButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
+		11F2E99C29ABDE2D003A524D /* MeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewModel.swift; sourceTree = "<group>"; };
+		11F2E99E29ABDE2D003A524D /* Me.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Me.swift; sourceTree = "<group>"; };
+		11F2E9A029ABDE2D003A524D /* MeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		11F2E9A329ABDE2D003A524D /* ExpButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpButton.swift; sourceTree = "<group>"; };
+		11F2E9A629ABDE2D003A524D /* NetworkControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkControllerProtocol.swift; sourceTree = "<group>"; };
+		11F2E9A729ABDE2D003A524D /* NetworkEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEndpoint.swift; sourceTree = "<group>"; };
+		11F2E9A829ABDE2D003A524D /* NetworkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		11F2E9A929ABDE2D003A524D /* NetworkDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDecoder.swift; sourceTree = "<group>"; };
+		11F2E9AA29ABDE2D003A524D /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		11F2E9AF29ABDE2D003A524D /* AnalyticsEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
+		11F2E9B129ABDE2D003A524D /* CloudKitAnalyticsEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitAnalyticsEngine.swift; sourceTree = "<group>"; };
+		11F2E9B229ABDE2D003A524D /* FirebaseAnalyticsEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsEngine.swift; sourceTree = "<group>"; };
+		11F2E9B529ABDE2D003A524D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		11F2E9B629ABDE2D003A524D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		11F2E9B829ABDE2D003A524D /* ConfigReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigReader.swift; sourceTree = "<group>"; };
+		11F2E9BA29ABDE2D003A524D /* ConfigurationDev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ConfigurationDev.plist; sourceTree = "<group>"; };
+		11F2E9BD29ABDE2D003A524D /* ConfigurationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
+		11F2E9BF29ABDE2D003A524D /* ConfigurationProd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ConfigurationProd.plist; sourceTree = "<group>"; };
+		11F2E9EC29ABDE65003A524D /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		11F2E9EE29ABDE65003A524D /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		11F2E9F129ABDE65003A524D /* Home_Mocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home_Mocks.swift; sourceTree = "<group>"; };
+		11F2E9F329ABDE65003A524D /* HomeServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeServer.swift; sourceTree = "<group>"; };
+		11F2E9F529ABDE65003A524D /* HomeLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLocal.swift; sourceTree = "<group>"; };
+		11F2E9F729ABDE65003A524D /* FirebaseAnalyticsHomeTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsHomeTracker.swift; sourceTree = "<group>"; };
+		11F2E9FA29ABDE65003A524D /* HomeRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		11F2E9FC29ABDE65003A524D /* HomeUseCasesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeUseCasesFactory.swift; sourceTree = "<group>"; };
+		11F2E9FD29ABDE65003A524D /* HomeUseCasesOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeUseCasesOutput.swift; sourceTree = "<group>"; };
+		11F2E9FE29ABDE65003A524D /* HomeUseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeUseCases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F2EA0B29ABDF45003A524D /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +168,14 @@
 		11F2E94C29ABDC6D003A524D /* AdHealth Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				11F2E94D29ABDC6D003A524D /* AdHealth_TrackerApp.swift */,
-				11F2E94F29ABDC6D003A524D /* ContentView.swift */,
+				11F2E97729ABDD24003A524D /* AdHealth-Tracker-Info.plist */,
+				11F2EA0C29ABE3BF003A524D /* BaseFiles */,
+				11F2E9E629ABDE36003A524D /* Modules */,
+				11F2E9AE29ABDE2D003A524D /* Analytics */,
+				11F2E9A429ABDE2D003A524D /* API */,
+				11F2E97829ABDE2D003A524D /* Shared */,
+				11F2E98D29ABDE2D003A524D /* SharedUI */,
+				11F2E9B329ABDE2D003A524D /* SuportingFiles */,
 				11F2E95129ABDC6E003A524D /* Assets.xcassets */,
 				11F2E95329ABDC6E003A524D /* Preview Content */,
 			);
@@ -127,6 +207,372 @@
 			path = "AdHealth TrackerUITests";
 			sourceTree = "<group>";
 		};
+		11F2E97829ABDE2D003A524D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E97929ABDE2D003A524D /* Models */,
+				11F2E97C29ABDE2D003A524D /* Extensions */,
+				11F2E98129ABDE2D003A524D /* Utilities */,
+				11F2E98629ABDE2D003A524D /* StyleGuide */,
+				11F2E98829ABDE2D003A524D /* Preferences Key */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		11F2E97929ABDE2D003A524D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E97B29ABDE2D003A524D /* AppError-Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		11F2E97C29ABDE2D003A524D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E97D29ABDE2D003A524D /* Dictionary-Extension.swift */,
+				11F2E97E29ABDE2D003A524D /* TimeInterval-Extension.swift */,
+				11F2E97F29ABDE2D003A524D /* String-Extension.swift */,
+				11F2E98029ABDE2D003A524D /* Animation-Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		11F2E98129ABDE2D003A524D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E98229ABDE2D003A524D /* UIImpactFeedBack */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		11F2E98229ABDE2D003A524D /* UIImpactFeedBack */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E98329ABDE2D003A524D /* UIImpactFeedBack.swift */,
+			);
+			path = UIImpactFeedBack;
+			sourceTree = "<group>";
+		};
+		11F2E98629ABDE2D003A524D /* StyleGuide */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E98729ABDE2D003A524D /* StyleGuide.swift */,
+			);
+			path = StyleGuide;
+			sourceTree = "<group>";
+		};
+		11F2E98829ABDE2D003A524D /* Preferences Key */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E98929ABDE2D003A524D /* PreferencesKey.swift */,
+			);
+			path = "Preferences Key";
+			sourceTree = "<group>";
+		};
+		11F2E98D29ABDE2D003A524D /* SharedUI */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E98E29ABDE2D003A524D /* Modifiers */,
+				11F2E98F29ABDE2D003A524D /* Cards */,
+				11F2E99229ABDE2D003A524D /* Components */,
+				11F2E9A129ABDE2D003A524D /* Generic */,
+			);
+			path = SharedUI;
+			sourceTree = "<group>";
+		};
+		11F2E98E29ABDE2D003A524D /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		11F2E98F29ABDE2D003A524D /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		11F2E99229ABDE2D003A524D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E99329ABDE2D003A524D /* Buttons */,
+				11F2E99829ABDE2D003A524D /* Alerts */,
+				11F2E99A29ABDE2D003A524D /* Me */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		11F2E99329ABDE2D003A524D /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E99429ABDE2D003A524D /* BackButtonView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		11F2E99829ABDE2D003A524D /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		11F2E99A29ABDE2D003A524D /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E99B29ABDE2D003A524D /* ViewModel */,
+				11F2E99D29ABDE2D003A524D /* Models */,
+				11F2E99F29ABDE2D003A524D /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		11F2E99B29ABDE2D003A524D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E99C29ABDE2D003A524D /* MeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11F2E99D29ABDE2D003A524D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E99E29ABDE2D003A524D /* Me.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		11F2E99F29ABDE2D003A524D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9A029ABDE2D003A524D /* MeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11F2E9A129ABDE2D003A524D /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9A229ABDE2D003A524D /* Buttons */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		11F2E9A229ABDE2D003A524D /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9A329ABDE2D003A524D /* ExpButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		11F2E9A429ABDE2D003A524D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9A529ABDE2D003A524D /* Servers */,
+				11F2E9AB29ABDE2D003A524D /* Services */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		11F2E9A529ABDE2D003A524D /* Servers */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9A629ABDE2D003A524D /* NetworkControllerProtocol.swift */,
+				11F2E9A729ABDE2D003A524D /* NetworkEndpoint.swift */,
+				11F2E9A829ABDE2D003A524D /* NetworkResponse.swift */,
+				11F2E9A929ABDE2D003A524D /* NetworkDecoder.swift */,
+				11F2E9AA29ABDE2D003A524D /* NetworkController.swift */,
+			);
+			path = Servers;
+			sourceTree = "<group>";
+		};
+		11F2E9AB29ABDE2D003A524D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		11F2E9AE29ABDE2D003A524D /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9AF29ABDE2D003A524D /* AnalyticsEvent.swift */,
+				11F2E9B029ABDE2D003A524D /* Engine */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		11F2E9B029ABDE2D003A524D /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9B129ABDE2D003A524D /* CloudKitAnalyticsEngine.swift */,
+				11F2E9B229ABDE2D003A524D /* FirebaseAnalyticsEngine.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		11F2E9B329ABDE2D003A524D /* SuportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9B429ABDE2D003A524D /* Localizable.strings */,
+				11F2E9B729ABDE2D003A524D /* AppConfig */,
+			);
+			path = SuportingFiles;
+			sourceTree = "<group>";
+		};
+		11F2E9B729ABDE2D003A524D /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9BD29ABDE2D003A524D /* ConfigurationManager.swift */,
+				11F2E9B829ABDE2D003A524D /* ConfigReader.swift */,
+				11F2E9B929ABDE2D003A524D /* Development */,
+				11F2E9BE29ABDE2D003A524D /* Production */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		11F2E9B929ABDE2D003A524D /* Development */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9BA29ABDE2D003A524D /* ConfigurationDev.plist */,
+			);
+			path = Development;
+			sourceTree = "<group>";
+		};
+		11F2E9BE29ABDE2D003A524D /* Production */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9BF29ABDE2D003A524D /* ConfigurationProd.plist */,
+			);
+			path = Production;
+			sourceTree = "<group>";
+		};
+		11F2E9E629ABDE36003A524D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9E929ABDE65003A524D /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		11F2E9E929ABDE65003A524D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9EA29ABDE65003A524D /* UI */,
+				11F2E9EF29ABDE65003A524D /* Data */,
+				11F2E9F829ABDE65003A524D /* Domain */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		11F2E9EA29ABDE65003A524D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9EB29ABDE65003A524D /* ViewModel */,
+				11F2E9ED29ABDE65003A524D /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		11F2E9EB29ABDE65003A524D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9EC29ABDE65003A524D /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11F2E9ED29ABDE65003A524D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9EE29ABDE65003A524D /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11F2E9EF29ABDE65003A524D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9F029ABDE65003A524D /* Mocks */,
+				11F2E9F229ABDE65003A524D /* Server */,
+				11F2E9F429ABDE65003A524D /* Local */,
+				11F2E9F629ABDE65003A524D /* Analytics */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		11F2E9F029ABDE65003A524D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9F129ABDE65003A524D /* Home_Mocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		11F2E9F229ABDE65003A524D /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9F329ABDE65003A524D /* HomeServer.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		11F2E9F429ABDE65003A524D /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9F529ABDE65003A524D /* HomeLocal.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		11F2E9F629ABDE65003A524D /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9F729ABDE65003A524D /* FirebaseAnalyticsHomeTracker.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		11F2E9F829ABDE65003A524D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9F929ABDE65003A524D /* Repository */,
+				11F2E9FB29ABDE65003A524D /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		11F2E9F929ABDE65003A524D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9FA29ABDE65003A524D /* HomeRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		11F2E9FB29ABDE65003A524D /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E9FC29ABDE65003A524D /* HomeUseCasesFactory.swift */,
+				11F2E9FD29ABDE65003A524D /* HomeUseCasesOutput.swift */,
+				11F2E9FE29ABDE65003A524D /* HomeUseCases.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		11F2EA0C29ABE3BF003A524D /* BaseFiles */ = {
+			isa = PBXGroup;
+			children = (
+				11F2E94D29ABDC6D003A524D /* AdHealth_TrackerApp.swift */,
+			);
+			path = BaseFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +589,9 @@
 			dependencies = (
 			);
 			name = "AdHealth Tracker";
+			packageProductDependencies = (
+				11F2EA0A29ABDF45003A524D /* ConfettiSwiftUI */,
+			);
 			productName = "AdHealth Tracker";
 			productReference = 11F2E94A29ABDC6D003A524D /* AdHealth Tracker.app */;
 			productType = "com.apple.product-type.application";
@@ -213,8 +662,12 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 11F2E94129ABDC6D003A524D;
+			packageReferences = (
+				11F2EA0929ABDF45003A524D /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
 			productRefGroup = 11F2E94B29ABDC6D003A524D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,7 +685,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F2E95529ABDC6E003A524D /* Preview Assets.xcassets in Resources */,
+				11F2E9E029ABDE2D003A524D /* Localizable.strings in Resources */,
+				11F2E9E529ABDE2D003A524D /* ConfigurationProd.plist in Resources */,
 				11F2E95229ABDC6E003A524D /* Assets.xcassets in Resources */,
+				11F2E9E229ABDE2D003A524D /* ConfigurationDev.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +713,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11F2E95029ABDC6D003A524D /* ContentView.swift in Sources */,
+				11F2EA0729ABDE65003A524D /* HomeUseCasesOutput.swift in Sources */,
+				11F2E9D329ABDE2D003A524D /* MeViewModel.swift in Sources */,
+				11F2EA0829ABDE65003A524D /* HomeUseCases.swift in Sources */,
+				11F2E9C229ABDE2D003A524D /* Dictionary-Extension.swift in Sources */,
+				11F2E9D829ABDE2D003A524D /* NetworkEndpoint.swift in Sources */,
+				11F2E9D729ABDE2D003A524D /* NetworkControllerProtocol.swift in Sources */,
+				11F2EA0529ABDE65003A524D /* HomeRepository.swift in Sources */,
+				11F2EA0429ABDE65003A524D /* FirebaseAnalyticsHomeTracker.swift in Sources */,
+				11F2E9C129ABDE2D003A524D /* AppError-Model.swift in Sources */,
+				11F2E9D929ABDE2D003A524D /* NetworkResponse.swift in Sources */,
+				11F2E9FF29ABDE65003A524D /* HomeViewModel.swift in Sources */,
+				11F2E9D629ABDE2D003A524D /* ExpButton.swift in Sources */,
+				11F2E9C329ABDE2D003A524D /* TimeInterval-Extension.swift in Sources */,
+				11F2E9CE29ABDE2D003A524D /* BackButtonView.swift in Sources */,
+				11F2E9C629ABDE2D003A524D /* UIImpactFeedBack.swift in Sources */,
+				11F2E9D429ABDE2D003A524D /* Me.swift in Sources */,
+				11F2E9DE29ABDE2D003A524D /* CloudKitAnalyticsEngine.swift in Sources */,
+				11F2E9D529ABDE2D003A524D /* MeView.swift in Sources */,
+				11F2EA0229ABDE65003A524D /* HomeServer.swift in Sources */,
+				11F2E9E429ABDE2D003A524D /* ConfigurationManager.swift in Sources */,
+				11F2E9C829ABDE2D003A524D /* StyleGuide.swift in Sources */,
+				11F2E9DB29ABDE2D003A524D /* NetworkController.swift in Sources */,
+				11F2EA0329ABDE65003A524D /* HomeLocal.swift in Sources */,
+				11F2EA0629ABDE65003A524D /* HomeUseCasesFactory.swift in Sources */,
+				11F2E9C429ABDE2D003A524D /* String-Extension.swift in Sources */,
+				11F2E9C529ABDE2D003A524D /* Animation-Extension.swift in Sources */,
+				11F2E9DD29ABDE2D003A524D /* AnalyticsEvent.swift in Sources */,
+				11F2E9E129ABDE2D003A524D /* ConfigReader.swift in Sources */,
+				11F2EA0129ABDE65003A524D /* Home_Mocks.swift in Sources */,
+				11F2E9DA29ABDE2D003A524D /* NetworkDecoder.swift in Sources */,
+				11F2E9DF29ABDE2D003A524D /* FirebaseAnalyticsEngine.swift in Sources */,
+				11F2E9C929ABDE2D003A524D /* PreferencesKey.swift in Sources */,
 				11F2E94E29ABDC6D003A524D /* AdHealth_TrackerApp.swift in Sources */,
+				11F2EA0029ABDE65003A524D /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,8 +782,20 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		11F2E9B429ABDE2D003A524D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11F2E9B529ABDE2D003A524D /* en */,
+				11F2E9B629ABDE2D003A524D /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		11F2E96C29ABDC6F003A524D /* Debug */ = {
+		11F2E96C29ABDC6F003A524D /* Dev */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -353,9 +853,9 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = Dev;
 		};
-		11F2E96D29ABDC6F003A524D /* Release */ = {
+		11F2E96D29ABDC6F003A524D /* Prod */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -407,9 +907,9 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Prod;
 		};
-		11F2E96F29ABDC6F003A524D /* Debug */ = {
+		11F2E96F29ABDC6F003A524D /* Dev */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -420,6 +920,7 @@
 				DEVELOPMENT_TEAM = ZASPB3G349;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AdHealth-Tracker-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -432,13 +933,14 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bryancms.AdHealth-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Dev;
 		};
-		11F2E97029ABDC6F003A524D /* Release */ = {
+		11F2E97029ABDC6F003A524D /* Prod */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -449,6 +951,7 @@
 				DEVELOPMENT_TEAM = ZASPB3G349;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AdHealth-Tracker-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -461,13 +964,14 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bryancms.AdHealth-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = Prod;
 		};
-		11F2E97229ABDC6F003A524D /* Debug */ = {
+		11F2E97229ABDC6F003A524D /* Dev */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -485,9 +989,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdHealth Tracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdHealth Tracker";
 			};
-			name = Debug;
+			name = Dev;
 		};
-		11F2E97329ABDC6F003A524D /* Release */ = {
+		11F2E97329ABDC6F003A524D /* Prod */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -505,9 +1009,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdHealth Tracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdHealth Tracker";
 			};
-			name = Release;
+			name = Prod;
 		};
-		11F2E97529ABDC6F003A524D /* Debug */ = {
+		11F2E97529ABDC6F003A524D /* Dev */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -523,9 +1027,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "AdHealth Tracker";
 			};
-			name = Debug;
+			name = Dev;
 		};
-		11F2E97629ABDC6F003A524D /* Release */ = {
+		11F2E97629ABDC6F003A524D /* Prod */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -541,7 +1045,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "AdHealth Tracker";
 			};
-			name = Release;
+			name = Prod;
 		};
 /* End XCBuildConfiguration section */
 
@@ -549,40 +1053,59 @@
 		11F2E94529ABDC6D003A524D /* Build configuration list for PBXProject "AdHealth Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11F2E96C29ABDC6F003A524D /* Debug */,
-				11F2E96D29ABDC6F003A524D /* Release */,
+				11F2E96C29ABDC6F003A524D /* Dev */,
+				11F2E96D29ABDC6F003A524D /* Prod */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Prod;
 		};
 		11F2E96E29ABDC6F003A524D /* Build configuration list for PBXNativeTarget "AdHealth Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11F2E96F29ABDC6F003A524D /* Debug */,
-				11F2E97029ABDC6F003A524D /* Release */,
+				11F2E96F29ABDC6F003A524D /* Dev */,
+				11F2E97029ABDC6F003A524D /* Prod */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Prod;
 		};
 		11F2E97129ABDC6F003A524D /* Build configuration list for PBXNativeTarget "AdHealth TrackerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11F2E97229ABDC6F003A524D /* Debug */,
-				11F2E97329ABDC6F003A524D /* Release */,
+				11F2E97229ABDC6F003A524D /* Dev */,
+				11F2E97329ABDC6F003A524D /* Prod */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Prod;
 		};
 		11F2E97429ABDC6F003A524D /* Build configuration list for PBXNativeTarget "AdHealth TrackerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11F2E97529ABDC6F003A524D /* Debug */,
-				11F2E97629ABDC6F003A524D /* Release */,
+				11F2E97529ABDC6F003A524D /* Dev */,
+				11F2E97629ABDC6F003A524D /* Prod */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Prod;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11F2EA0929ABDF45003A524D /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11F2EA0A29ABDF45003A524D /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11F2EA0929ABDF45003A524D /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 11F2E94229ABDC6D003A524D /* Project object */;
 }
