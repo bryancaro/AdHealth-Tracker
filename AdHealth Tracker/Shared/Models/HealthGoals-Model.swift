@@ -32,19 +32,22 @@ struct RewardResponse: Decodable {
 }
 
 //  MARK: - MODEL
-struct HealthGoalsModel {
+struct HealthGoalsModel: Identifiable {
+    let id: UUID
     let goals: [GoalModel]
     
     init(_ response: HealthGoalsResponse) {
+        self.id = UUID()
         self.goals = response.goals.map({ GoalModel($0) })
     }
     
     init(goals: [GoalModel]) {
+        self.id = UUID()
         self.goals = goals
     }
 }
 
-struct GoalModel {
+struct GoalModel: Identifiable {
     let id: Int
     let goal: String
     let description: String
