@@ -11,7 +11,6 @@
 //
 
 import Foundation
-import Combine
 
 protocol NetworkProtocol {
     var manager: NetworkController { get }
