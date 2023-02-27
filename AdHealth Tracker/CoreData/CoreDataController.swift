@@ -37,7 +37,7 @@ class CoreDataController: CoreDataControllerProtocol {
     }()
     
     @discardableResult
-    func saveData() -> Result<Void, Error> {
+    func saveData() -> Result<Void, CoreDataError> {
         let context = self.mainQueueContext
         
         if context.hasChanges {
@@ -48,14 +48,14 @@ class CoreDataController: CoreDataControllerProtocol {
             } catch {
                 let nserror = error as NSError
                 print("💾🔴 [COREDATA] [SAVEDATA][ERROR]: [\(nserror) -- \(nserror.userInfo)]")
-                return .failure(CoreDataError.saveError)
+                return .failure(.saveError)
             }
         } else {
             return .success(())
         }
     }
     
-    func getSavedData<T: NSManagedObject>(_ objectType: T.Type) -> Result<[T], Error> {
+    func getSavedData<T: NSManagedObject>(_ objectType: T.Type) -> Result<[T], CoreDataError> {
         let context = self.mainQueueContext
         
         let entityName = String(describing: objectType)
@@ -66,12 +66,12 @@ class CoreDataController: CoreDataControllerProtocol {
             return .success(fetchedObjects ?? [T]())
         } catch {
             print("💾🔴 [COREDATA] [GET-SAVEDATA][ERROR]: [\(error.localizedDescription)]")
-            return .failure(error)
+            return .failure(.fetchError)
         }
     }
     
     @discardableResult
-    func deleteSavedData<T: NSManagedObject>(_ objectType: T.Type) -> Result<Void, Error> {
+    func deleteSavedData<T: NSManagedObject>(_ objectType: T.Type) -> Result<Void, CoreDataError> {
         let context = self.mainQueueContext
         
         let entityName = String(describing: objectType)
@@ -84,7 +84,7 @@ class CoreDataController: CoreDataControllerProtocol {
             return .success(())
         } catch let error {
             print("💾🔴 [COREDATA] [DELETE-SAVEDATA][ERROR]: [\(error.localizedDescription)]")
-            return .failure(error)
+            return .failure(.deleteError)
         }
     }
 }

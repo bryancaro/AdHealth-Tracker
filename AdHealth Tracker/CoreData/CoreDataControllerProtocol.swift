@@ -17,9 +17,9 @@ protocol CoreDataProtocol {
 }
 
 protocol CoreDataControllerProtocol: AnyObject {
-    func saveData() -> Result<Void, Error>
-    func getSavedData<T: NSManagedObject>(_ objectType: T.Type) -> Result<[T], Error>
-    func deleteSavedData<T: NSManagedObject>(_ objectType: T.Type) -> Result<Void, Error>
+    func saveData() -> Result<Void, CoreDataError>
+    func getSavedData<T: NSManagedObject>(_ objectType: T.Type) -> Result<[T], CoreDataError>
+    func deleteSavedData<T: NSManagedObject>(_ objectType: T.Type) -> Result<Void, CoreDataError>
 }
 
 enum CoreDataError: Error {
