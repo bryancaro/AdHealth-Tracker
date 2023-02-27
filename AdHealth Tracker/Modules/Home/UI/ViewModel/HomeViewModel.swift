@@ -11,12 +11,13 @@
 //
 
 import Foundation
+import CoreData
 
 final class HomeViewModel: ObservableObject {
     @Published var isLoading = true
     @Published var appError: AppError?
     
-    private var repository: HomeUseCasesProtocol!
+    var repository: HomeUseCasesProtocol!
     //  MARK: - Lifecycle
     init(repository: HomeUseCasesProtocol = HomeUseCasesFactory().makeUseCases()) {
         self.repository = repository
@@ -42,9 +43,14 @@ final class HomeViewModel: ObservableObject {
 extension HomeViewModel: HomeUseCasesOutputProtocol {
     func onAppearSuccess() {
         print("[🟢] [HomeViewModel] [onAppear]")
-        Task {
-           await repository.getHealthGoals()
-        }
+//        fetchItems()
+//
+//        DispatchQueue.main.asyncAfter(wallDeadline: .now() + 10, execute: {
+//            self.addFruit()
+//        })
+//        Task {
+//           await repository.getHealthGoals()
+//        }
     }
     
     func onDisappearSuccess() {
@@ -62,7 +68,9 @@ extension HomeViewModel: HomeUseCasesOutputProtocol {
     func defaultError(_ errorString: String) {
         print("[🔴] [HomeViewModel] [Error]: \(errorString)")
         haptic(type: .error)
-        isLoading = false
-        appError = AppError(errorString: errorString)
+        DispatchQueue.main.async {
+            self.isLoading = false
+            self.appError = AppError(errorString: errorString)
+        }
     }
 }

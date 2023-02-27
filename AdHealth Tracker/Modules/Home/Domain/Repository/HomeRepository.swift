@@ -33,12 +33,39 @@ extension HomeRepository: HomeUseCasesProtocol {
         print("☀️ onAppear [Home]")
         delegate?.onAppearSuccess()
         output.onAppearSuccess()
+        getHealtGoalsCoreData()
+//        local.fetchItems()
     }
     
     func onDisappear() {
         print("🌑 onDisappear [Home]")
         delegate?.onDisappearSuccess()
         output.onDisappearSuccess()
+    }
+    
+    func writeToCoreData() {
+        do {
+            try local.saveHealthGoalsArray(model: HealthGoalsModel.test.goals)
+            print("FROM REPOSITORY SUCCESS WRITE DATA TO COREDATA")
+        } catch let error {
+            print(error.localizedDescription)
+            print("FROM REPOSITORY FAILED WRITE DATA TO COREDATA")
+        }
+    }
+    
+    func getHealtGoalsCoreData() {
+        do {
+            let response = try local.getHealthGoals()
+            let data = HealthGoalsModel(response)
+            print("FROM REPOSITORY SUCCESS READ DATA: \(data.goals)")
+        } catch let error {
+            print("FROM REPOSITORY FAILED READ DATA")
+            print(error.localizedDescription)
+        }
+    }
+    
+    func deleteAllCoreData() {
+        local.deleteAll()
     }
     
     func getHealthGoals() async {

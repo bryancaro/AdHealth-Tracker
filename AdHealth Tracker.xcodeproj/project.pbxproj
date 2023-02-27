@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1118174529AD1CB2008CF82B /* HealthGoalsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118174429AD1CB2008CF82B /* HealthGoalsEntity.swift */; };
+		118D536D29AC16DD00B279F7 /* CoreDataControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118D536C29AC16DD00B279F7 /* CoreDataControllerProtocol.swift */; };
+		118D536F29AC174B00B279F7 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118D536E29AC174B00B279F7 /* CoreDataController.swift */; };
 		11F2E94E29ABDC6D003A524D /* AdHealth_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E94D29ABDC6D003A524D /* AdHealth_TrackerApp.swift */; };
 		11F2E95229ABDC6E003A524D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F2E95129ABDC6E003A524D /* Assets.xcassets */; };
 		11F2E95529ABDC6E003A524D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F2E95429ABDC6E003A524D /* Preview Assets.xcassets */; };
@@ -52,6 +55,7 @@
 		11F2EA0B29ABDF45003A524D /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 11F2EA0A29ABDF45003A524D /* ConfettiSwiftUI */; };
 		11F2EA0E29ABE4EB003A524D /* HealthGoals-Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2EA0D29ABE4EB003A524D /* HealthGoals-Model.swift */; };
 		11F2EA1029ABE78A003A524D /* HomeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2EA0F29ABE78A003A524D /* HomeServices.swift */; };
+		11F2EA1629AC0179003A524D /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11F2EA1429AC0179003A524D /* CoreDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1118174429AD1CB2008CF82B /* HealthGoalsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGoalsEntity.swift; sourceTree = "<group>"; };
+		118D536C29AC16DD00B279F7 /* CoreDataControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataControllerProtocol.swift; sourceTree = "<group>"; };
+		118D536E29AC174B00B279F7 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
 		11F2E94A29ABDC6D003A524D /* AdHealth Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AdHealth Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F2E94D29ABDC6D003A524D /* AdHealth_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdHealth_TrackerApp.swift; sourceTree = "<group>"; };
 		11F2E95129ABDC6E003A524D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +128,7 @@
 		11F2E9FE29ABDE65003A524D /* HomeUseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeUseCases.swift; sourceTree = "<group>"; };
 		11F2EA0D29ABE4EB003A524D /* HealthGoals-Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthGoals-Model.swift"; sourceTree = "<group>"; };
 		11F2EA0F29ABE78A003A524D /* HomeServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServices.swift; sourceTree = "<group>"; };
+		11F2EA1529AC0179003A524D /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +157,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1118174229AD1C84008CF82B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1118174329AD1C93008CF82B /* Entity */,
+				11F2EA1429AC0179003A524D /* CoreDataModel.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1118174329AD1C93008CF82B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				1118174429AD1CB2008CF82B /* HealthGoalsEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		11F2E94129ABDC6D003A524D = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +202,7 @@
 				11F2E9E629ABDE36003A524D /* Modules */,
 				11F2E9AE29ABDE2D003A524D /* Analytics */,
 				11F2E9A429ABDE2D003A524D /* API */,
+				11F2EA1129ABF9E8003A524D /* CoreData */,
 				11F2E97829ABDE2D003A524D /* Shared */,
 				11F2E98D29ABDE2D003A524D /* SharedUI */,
 				11F2E9B329ABDE2D003A524D /* SuportingFiles */,
@@ -388,10 +414,10 @@
 			isa = PBXGroup;
 			children = (
 				11F2E9A629ABDE2D003A524D /* NetworkControllerProtocol.swift */,
+				11F2E9AA29ABDE2D003A524D /* NetworkController.swift */,
 				11F2E9A729ABDE2D003A524D /* NetworkEndpoint.swift */,
 				11F2E9A829ABDE2D003A524D /* NetworkResponse.swift */,
 				11F2E9A929ABDE2D003A524D /* NetworkDecoder.swift */,
-				11F2E9AA29ABDE2D003A524D /* NetworkController.swift */,
 			);
 			path = Servers;
 			sourceTree = "<group>";
@@ -579,6 +605,16 @@
 			path = BaseFiles;
 			sourceTree = "<group>";
 		};
+		11F2EA1129ABF9E8003A524D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1118174229AD1C84008CF82B /* Models */,
+				118D536C29AC16DD00B279F7 /* CoreDataControllerProtocol.swift */,
+				118D536E29AC174B00B279F7 /* CoreDataController.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -719,7 +755,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F2EA1629AC0179003A524D /* CoreDataModel.xcdatamodeld in Sources */,
 				11F2EA0729ABDE65003A524D /* HomeUseCasesOutput.swift in Sources */,
+				118D536F29AC174B00B279F7 /* CoreDataController.swift in Sources */,
 				11F2E9D329ABDE2D003A524D /* MeViewModel.swift in Sources */,
 				11F2EA0829ABDE65003A524D /* HomeUseCases.swift in Sources */,
 				11F2E9C229ABDE2D003A524D /* Dictionary-Extension.swift in Sources */,
@@ -741,6 +779,7 @@
 				11F2EA0229ABDE65003A524D /* HomeServer.swift in Sources */,
 				11F2E9E429ABDE2D003A524D /* ConfigurationManager.swift in Sources */,
 				11F2E9C829ABDE2D003A524D /* StyleGuide.swift in Sources */,
+				1118174529AD1CB2008CF82B /* HealthGoalsEntity.swift in Sources */,
 				11F2E9DB29ABDE2D003A524D /* NetworkController.swift in Sources */,
 				11F2EA0329ABDE65003A524D /* HomeLocal.swift in Sources */,
 				11F2EA0629ABDE65003A524D /* HomeUseCasesFactory.swift in Sources */,
@@ -753,6 +792,7 @@
 				11F2E9DA29ABDE2D003A524D /* NetworkDecoder.swift in Sources */,
 				11F2E9DF29ABDE2D003A524D /* FirebaseAnalyticsEngine.swift in Sources */,
 				11F2E9C929ABDE2D003A524D /* PreferencesKey.swift in Sources */,
+				118D536D29AC16DD00B279F7 /* CoreDataControllerProtocol.swift in Sources */,
 				11F2E94E29ABDC6D003A524D /* AdHealth_TrackerApp.swift in Sources */,
 				11F2EA0029ABDE65003A524D /* HomeView.swift in Sources */,
 			);
@@ -1114,6 +1154,19 @@
 			productName = ConfettiSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		11F2EA1429AC0179003A524D /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				11F2EA1529AC0179003A524D /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 11F2EA1529AC0179003A524D /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 11F2E94229ABDC6D003A524D /* Project object */;
 }

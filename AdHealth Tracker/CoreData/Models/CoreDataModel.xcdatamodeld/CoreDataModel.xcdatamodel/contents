@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22C65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="GoalsEntity" representedClassName="GoalsEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="descript" optional="YES" attributeType="String"/>
+        <attribute name="goal" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="goalReward" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="RewardEntity" inverseName="rewardGoal" inverseEntity="RewardEntity"/>
+    </entity>
+    <entity name="RewardEntity" representedClassName="RewardEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="points" optional="YES" attributeType="String"/>
+        <attribute name="trophy" optional="YES" attributeType="String"/>
+        <relationship name="rewardGoal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GoalsEntity" inverseName="goalReward" inverseEntity="GoalsEntity"/>
+    </entity>
+</model>

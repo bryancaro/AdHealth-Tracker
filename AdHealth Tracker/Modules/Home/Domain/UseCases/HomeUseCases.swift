@@ -18,4 +18,7 @@ protocol HomeUseCasesProtocol: AnyObject {
     func onAppear()
     func onDisappear()
     func getHealthGoals() async
+    func writeToCoreData()
+    func deleteAllCoreData()
+    func getHealtGoalsCoreData()
 }
