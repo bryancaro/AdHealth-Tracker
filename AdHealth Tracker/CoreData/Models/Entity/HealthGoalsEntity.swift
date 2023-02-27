@@ -8,16 +8,6 @@
 import Foundation
 import CoreData
 
-extension HealthGoalsModel {
-    @discardableResult
-    func convertToEntity(context: NSManagedObjectContext) -> HealthGoalsEntity {
-        let entity = HealthGoalsEntity(context: context)
-        entity.healtGoals?.addingObjects(from: self.goals.convertToEntity(context: context))
-        
-        return entity
-    }
-}
-
 extension [GoalModel] {
     @discardableResult
     func convertToEntity(context: NSManagedObjectContext) -> [GoalsEntity] {
