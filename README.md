@@ -1,4 +1,4 @@
-![L1](https://user-images.githubusercontent.com/58017823/221425953-d29e45ee-4fcd-48a4-989e-c4e957356998.png)
+![L1](https://user-images.githubusercontent.com/58017823/221840507-28fea112-9898-4e8d-9ad5-28b14809820d.png)
 
 # AdHealth-Tracker!
 
@@ -26,18 +26,11 @@ This is a development project for an application that allows you to track your d
 
 I personally designed the app using Figma, a popular design tool, to create a user-friendly interface and ensure a seamless user experience.
 
-![DesignApp](https://user-images.githubusercontent.com/58017823/221426330-ce7d89de-6db0-4a94-a3ac-c8ebf5349ca3.png)
+![DesignApp](https://user-images.githubusercontent.com/58017823/221840590-9f40eef0-84cf-4201-b200-3a9df8a187a9.png)
 
-
-### Video:
-https://user-images.githubusercontent.com/58017823/221426515-e4ed2951-56d5-4c9e-8c92-3572a1b01289.mp4
 
 
 
 ### Developer: 
      - Bryan Caro Monsalve
-
-
-
-
 
