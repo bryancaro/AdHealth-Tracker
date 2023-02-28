@@ -10,7 +10,23 @@
 		1118174529AD1CB2008CF82B /* HealthGoalsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118174429AD1CB2008CF82B /* HealthGoalsEntity.swift */; };
 		1118174829AD3CC6008CF82B /* HealthKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118174729AD3CC6008CF82B /* HealthKitController.swift */; };
 		1118175529AD487A008CF82B /* HealthKitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118175429AD487A008CF82B /* HealthKitProtocol.swift */; };
-		1118175829AD4AAA008CF82B /* HomeHealthKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118175729AD4AAA008CF82B /* HomeHealthKit.swift */; };
+		1118175829AD4AAA008CF82B /* LaunchScreenHealthKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118175729AD4AAA008CF82B /* LaunchScreenHealthKit.swift */; };
+		1118177129AD54EE008CF82B /* LaunchScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118175E29AD54EE008CF82B /* LaunchScreenViewModel.swift */; };
+		1118177229AD54EE008CF82B /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118176029AD54EE008CF82B /* LaunchScreenView.swift */; };
+		1118177329AD54EE008CF82B /* LaunchScreen_Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118176329AD54EE008CF82B /* LaunchScreen_Mocks.swift */; };
+		1118177429AD54EE008CF82B /* LaunchScreenServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118176529AD54EE008CF82B /* LaunchScreenServer.swift */; };
+		1118177529AD54EE008CF82B /* LaunchScreenLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118176729AD54EE008CF82B /* LaunchScreenLocal.swift */; };
+		1118177629AD54EE008CF82B /* FirebaseAnalyticsLaunchScreenTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118176929AD54EE008CF82B /* FirebaseAnalyticsLaunchScreenTracker.swift */; };
+		1118177729AD54EE008CF82B /* LaunchScreenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118176C29AD54EE008CF82B /* LaunchScreenRepository.swift */; };
+		1118177829AD54EE008CF82B /* LaunchScreenUseCasesOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118176E29AD54EE008CF82B /* LaunchScreenUseCasesOutput.swift */; };
+		1118177929AD54EE008CF82B /* LaunchScreenUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118176F29AD54EE008CF82B /* LaunchScreenUseCases.swift */; };
+		1118177A29AD54EE008CF82B /* LaunchScreenUseCasesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118177029AD54EE008CF82B /* LaunchScreenUseCasesFactory.swift */; };
+		1118177C29AD6754008CF82B /* AdButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118177B29AD6754008CF82B /* AdButton.swift */; };
+		1118178029AD6E3F008CF82B /* AdHealthLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118177F29AD6E3F008CF82B /* AdHealthLoading.swift */; };
+		1118178229AD75CB008CF82B /* AdHealthAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118178129AD75CB008CF82B /* AdHealthAlert.swift */; };
+		1118178529AD8572008CF82B /* GoalsDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118178429AD8572008CF82B /* GoalsDataView.swift */; };
+		1118178929AD92F1008CF82B /* DailyGoalsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118178829AD92F1008CF82B /* DailyGoalsCard.swift */; };
+		1118178B29AD96A9008CF82B /* DailyGoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1118178A29AD96A9008CF82B /* DailyGoalsView.swift */; };
 		118D536D29AC16DD00B279F7 /* CoreDataControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118D536C29AC16DD00B279F7 /* CoreDataControllerProtocol.swift */; };
 		118D536F29AC174B00B279F7 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118D536E29AC174B00B279F7 /* CoreDataController.swift */; };
 		11F2E94E29ABDC6D003A524D /* AdHealth_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F2E94D29ABDC6D003A524D /* AdHealth_TrackerApp.swift */; };
@@ -83,7 +99,23 @@
 		1118174729AD3CC6008CF82B /* HealthKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitController.swift; sourceTree = "<group>"; };
 		1118174F29AD3F95008CF82B /* AdHealth Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AdHealth Tracker.entitlements"; sourceTree = "<group>"; };
 		1118175429AD487A008CF82B /* HealthKitProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitProtocol.swift; sourceTree = "<group>"; };
-		1118175729AD4AAA008CF82B /* HomeHealthKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHealthKit.swift; sourceTree = "<group>"; };
+		1118175729AD4AAA008CF82B /* LaunchScreenHealthKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenHealthKit.swift; sourceTree = "<group>"; };
+		1118175E29AD54EE008CF82B /* LaunchScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewModel.swift; sourceTree = "<group>"; };
+		1118176029AD54EE008CF82B /* LaunchScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		1118176329AD54EE008CF82B /* LaunchScreen_Mocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreen_Mocks.swift; sourceTree = "<group>"; };
+		1118176529AD54EE008CF82B /* LaunchScreenServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenServer.swift; sourceTree = "<group>"; };
+		1118176729AD54EE008CF82B /* LaunchScreenLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenLocal.swift; sourceTree = "<group>"; };
+		1118176929AD54EE008CF82B /* FirebaseAnalyticsLaunchScreenTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsLaunchScreenTracker.swift; sourceTree = "<group>"; };
+		1118176C29AD54EE008CF82B /* LaunchScreenRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenRepository.swift; sourceTree = "<group>"; };
+		1118176E29AD54EE008CF82B /* LaunchScreenUseCasesOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenUseCasesOutput.swift; sourceTree = "<group>"; };
+		1118176F29AD54EE008CF82B /* LaunchScreenUseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenUseCases.swift; sourceTree = "<group>"; };
+		1118177029AD54EE008CF82B /* LaunchScreenUseCasesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenUseCasesFactory.swift; sourceTree = "<group>"; };
+		1118177B29AD6754008CF82B /* AdButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdButton.swift; sourceTree = "<group>"; };
+		1118177F29AD6E3F008CF82B /* AdHealthLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdHealthLoading.swift; sourceTree = "<group>"; };
+		1118178129AD75CB008CF82B /* AdHealthAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdHealthAlert.swift; sourceTree = "<group>"; };
+		1118178429AD8572008CF82B /* GoalsDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsDataView.swift; sourceTree = "<group>"; };
+		1118178829AD92F1008CF82B /* DailyGoalsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalsCard.swift; sourceTree = "<group>"; };
+		1118178A29AD96A9008CF82B /* DailyGoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalsView.swift; sourceTree = "<group>"; };
 		118D536C29AC16DD00B279F7 /* CoreDataControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataControllerProtocol.swift; sourceTree = "<group>"; };
 		118D536E29AC174B00B279F7 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
 		11F2E94A29ABDC6D003A524D /* AdHealth Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AdHealth Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,9 +225,132 @@
 		1118175629AD4A86008CF82B /* Health */ = {
 			isa = PBXGroup;
 			children = (
-				1118175729AD4AAA008CF82B /* HomeHealthKit.swift */,
+				1118175729AD4AAA008CF82B /* LaunchScreenHealthKit.swift */,
 			);
 			path = Health;
+			sourceTree = "<group>";
+		};
+		1118175B29AD54EE008CF82B /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1118175C29AD54EE008CF82B /* UI */,
+				1118176A29AD54EE008CF82B /* Domain */,
+				1118176129AD54EE008CF82B /* Data */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		1118175C29AD54EE008CF82B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1118175D29AD54EE008CF82B /* ViewModel */,
+				1118175F29AD54EE008CF82B /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1118175D29AD54EE008CF82B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1118175E29AD54EE008CF82B /* LaunchScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1118175F29AD54EE008CF82B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1118176029AD54EE008CF82B /* LaunchScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1118176129AD54EE008CF82B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1118175629AD4A86008CF82B /* Health */,
+				1118176229AD54EE008CF82B /* Mocks */,
+				1118176429AD54EE008CF82B /* Server */,
+				1118176629AD54EE008CF82B /* Local */,
+				1118176829AD54EE008CF82B /* Analytics */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1118176229AD54EE008CF82B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				1118176329AD54EE008CF82B /* LaunchScreen_Mocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		1118176429AD54EE008CF82B /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				1118176529AD54EE008CF82B /* LaunchScreenServer.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		1118176629AD54EE008CF82B /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				1118176729AD54EE008CF82B /* LaunchScreenLocal.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		1118176829AD54EE008CF82B /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				1118176929AD54EE008CF82B /* FirebaseAnalyticsLaunchScreenTracker.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		1118176A29AD54EE008CF82B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1118176B29AD54EE008CF82B /* Repository */,
+				1118176D29AD54EE008CF82B /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1118176B29AD54EE008CF82B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				1118176C29AD54EE008CF82B /* LaunchScreenRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		1118176D29AD54EE008CF82B /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				1118176E29AD54EE008CF82B /* LaunchScreenUseCasesOutput.swift */,
+				1118176F29AD54EE008CF82B /* LaunchScreenUseCases.swift */,
+				1118177029AD54EE008CF82B /* LaunchScreenUseCasesFactory.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		1118177E29AD6E28008CF82B /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				1118177F29AD6E3F008CF82B /* AdHealthLoading.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		1118178329AD8538008CF82B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1118178429AD8572008CF82B /* GoalsDataView.swift */,
+				1118178A29AD96A9008CF82B /* DailyGoalsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		11F2E94129ABDC6D003A524D = {
@@ -348,6 +503,7 @@
 		11F2E98F29ABDE2D003A524D /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				1118178829AD92F1008CF82B /* DailyGoalsCard.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -355,6 +511,8 @@
 		11F2E99229ABDE2D003A524D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1118178329AD8538008CF82B /* Views */,
+				1118177E29AD6E28008CF82B /* Loading */,
 				11F2E99329ABDE2D003A524D /* Buttons */,
 				11F2E99829ABDE2D003A524D /* Alerts */,
 				11F2E99A29ABDE2D003A524D /* Me */,
@@ -366,6 +524,7 @@
 			isa = PBXGroup;
 			children = (
 				11F2E99429ABDE2D003A524D /* BackButtonView.swift */,
+				1118177B29AD6754008CF82B /* AdButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -373,6 +532,7 @@
 		11F2E99829ABDE2D003A524D /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
+				1118178129AD75CB008CF82B /* AdHealthAlert.swift */,
 			);
 			path = Alerts;
 			sourceTree = "<group>";
@@ -513,6 +673,7 @@
 		11F2E9E629ABDE36003A524D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1118175B29AD54EE008CF82B /* LaunchScreen */,
 				11F2E9E929ABDE65003A524D /* Home */,
 			);
 			path = Modules;
@@ -556,7 +717,6 @@
 		11F2E9EF29ABDE65003A524D /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				1118175629AD4A86008CF82B /* Health */,
 				11F2E9F029ABDE65003A524D /* Mocks */,
 				11F2E9F229ABDE65003A524D /* Server */,
 				11F2E9F429ABDE65003A524D /* Local */,
@@ -783,9 +943,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F2EA1629AC0179003A524D /* CoreDataModel.xcdatamodeld in Sources */,
+				1118178229AD75CB008CF82B /* AdHealthAlert.swift in Sources */,
 				11F2EA0729ABDE65003A524D /* HomeUseCasesOutput.swift in Sources */,
 				118D536F29AC174B00B279F7 /* CoreDataController.swift in Sources */,
 				11F2E9D329ABDE2D003A524D /* MeViewModel.swift in Sources */,
+				1118177A29AD54EE008CF82B /* LaunchScreenUseCasesFactory.swift in Sources */,
 				11F2EA0829ABDE65003A524D /* HomeUseCases.swift in Sources */,
 				11F2E9C229ABDE2D003A524D /* Dictionary-Extension.swift in Sources */,
 				11F2E9D829ABDE2D003A524D /* NetworkEndpoint.swift in Sources */,
@@ -795,20 +957,29 @@
 				1118175529AD487A008CF82B /* HealthKitProtocol.swift in Sources */,
 				11F2E9C129ABDE2D003A524D /* AppError-Model.swift in Sources */,
 				11F2E9D929ABDE2D003A524D /* NetworkResponse.swift in Sources */,
-				1118175829AD4AAA008CF82B /* HomeHealthKit.swift in Sources */,
+				1118175829AD4AAA008CF82B /* LaunchScreenHealthKit.swift in Sources */,
 				11F2E9FF29ABDE65003A524D /* HomeViewModel.swift in Sources */,
 				11F2E9D629ABDE2D003A524D /* ExpButton.swift in Sources */,
+				1118177929AD54EE008CF82B /* LaunchScreenUseCases.swift in Sources */,
 				11F2E9C329ABDE2D003A524D /* TimeInterval-Extension.swift in Sources */,
 				1118174829AD3CC6008CF82B /* HealthKitController.swift in Sources */,
 				11F2E9CE29ABDE2D003A524D /* BackButtonView.swift in Sources */,
 				11F2E9C629ABDE2D003A524D /* UIImpactFeedBack.swift in Sources */,
 				11F2E9D429ABDE2D003A524D /* Me.swift in Sources */,
 				11F2EA0E29ABE4EB003A524D /* HealthGoals-Model.swift in Sources */,
+				1118177329AD54EE008CF82B /* LaunchScreen_Mocks.swift in Sources */,
 				11F2E9DE29ABDE2D003A524D /* CloudKitAnalyticsEngine.swift in Sources */,
+				1118178B29AD96A9008CF82B /* DailyGoalsView.swift in Sources */,
+				1118177529AD54EE008CF82B /* LaunchScreenLocal.swift in Sources */,
+				1118177629AD54EE008CF82B /* FirebaseAnalyticsLaunchScreenTracker.swift in Sources */,
 				11F2E9D529ABDE2D003A524D /* MeView.swift in Sources */,
 				11F2EA0229ABDE65003A524D /* HomeServer.swift in Sources */,
+				1118177C29AD6754008CF82B /* AdButton.swift in Sources */,
+				1118177129AD54EE008CF82B /* LaunchScreenViewModel.swift in Sources */,
+				1118177429AD54EE008CF82B /* LaunchScreenServer.swift in Sources */,
 				11F2E9E429ABDE2D003A524D /* ConfigurationManager.swift in Sources */,
 				11F2E9C829ABDE2D003A524D /* StyleGuide.swift in Sources */,
+				1118178029AD6E3F008CF82B /* AdHealthLoading.swift in Sources */,
 				1118174529AD1CB2008CF82B /* HealthGoalsEntity.swift in Sources */,
 				11F2E9DB29ABDE2D003A524D /* NetworkController.swift in Sources */,
 				11F2EA0329ABDE65003A524D /* HomeLocal.swift in Sources */,
@@ -816,15 +987,20 @@
 				11F2E9C429ABDE2D003A524D /* String-Extension.swift in Sources */,
 				11F2E9C529ABDE2D003A524D /* Animation-Extension.swift in Sources */,
 				11F2E9DD29ABDE2D003A524D /* AnalyticsEvent.swift in Sources */,
+				1118177229AD54EE008CF82B /* LaunchScreenView.swift in Sources */,
 				11F2E9E129ABDE2D003A524D /* ConfigReader.swift in Sources */,
 				11F2EA0129ABDE65003A524D /* Home_Mocks.swift in Sources */,
 				11F2EA1029ABE78A003A524D /* HomeServices.swift in Sources */,
 				11F2E9DA29ABDE2D003A524D /* NetworkDecoder.swift in Sources */,
+				1118177729AD54EE008CF82B /* LaunchScreenRepository.swift in Sources */,
 				11F2E9DF29ABDE2D003A524D /* FirebaseAnalyticsEngine.swift in Sources */,
 				11F2E9C929ABDE2D003A524D /* PreferencesKey.swift in Sources */,
+				1118178929AD92F1008CF82B /* DailyGoalsCard.swift in Sources */,
+				1118178529AD8572008CF82B /* GoalsDataView.swift in Sources */,
 				118D536D29AC16DD00B279F7 /* CoreDataControllerProtocol.swift in Sources */,
 				11F2E94E29ABDC6D003A524D /* AdHealth_TrackerApp.swift in Sources */,
 				11F2EA0029ABDE65003A524D /* HomeView.swift in Sources */,
+				1118177829AD54EE008CF82B /* LaunchScreenUseCasesOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1004,8 +1180,10 @@
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app requires to access your health data";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1037,8 +1215,10 @@
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app requires to access your health data";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

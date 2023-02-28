@@ -18,12 +18,12 @@ let screen = UIScreen.main.bounds
 
 //  MARK: - BRAND LOGO
 extension Image {
-    static let Cabify_Logo = Image("cabify_logo")
+    static let Adidas_Logo = Image("adidas-logo")
 }
 
 //  MARK: - COLOR PALETTE
 extension Color {
-    static let CabifyColor = Color("purple-color")
+    static let AdidasGreen = Color("green-main")
     static let Primary     = Color("primary-color")
     static let Secondary   = Color("secondary-color")
     static let Info        = Color("info-color")

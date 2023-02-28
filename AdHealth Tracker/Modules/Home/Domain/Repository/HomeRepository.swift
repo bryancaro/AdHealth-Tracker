@@ -33,7 +33,7 @@ extension HomeRepository: HomeUseCasesProtocol {
         print("☀️ onAppear [Home]")
         delegate?.onAppearSuccess()
         output.onAppearSuccess()
-        getHealtGoalsCoreData()
+//        getHealtGoalsCoreData()
 //        local.fetchItems()
     }
     

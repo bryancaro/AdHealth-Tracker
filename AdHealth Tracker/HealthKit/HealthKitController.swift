@@ -18,6 +18,8 @@ class Health: HealthKitProtocol {
 }
 
 class HealthKitController: HealthKitControllerProtocol {
+    static let shared = HealthKitController()
+    
     private let healthStore = HKHealthStore()
     private let stepCountType = HKQuantityType.quantityType(forIdentifier: .stepCount)!
     private let stepCountUnit = HKUnit.count()
@@ -34,8 +36,27 @@ class HealthKitController: HealthKitControllerProtocol {
                 return
             }
             
-            print("🩺🟢 [HEALTHKIT]: [REQUEST SUCCESS]")
+            guard success else {
+                completion(.healthDataUnauthorized)
+                return
+            }
+            
             completion(nil)
+        }
+    }
+    
+    func readStatusRequest() {
+        let authorizationStatus = self.healthStore.authorizationStatus(for: self.stepCountType)
+
+        switch authorizationStatus {
+        case .notDetermined:
+            print("🩺🟢 [HEALTHKIT]: [REQUEST notDetermined]")
+        case .sharingDenied:
+            print("🩺🟢 [HEALTHKIT]: [REQUEST sharingDenied]")
+        case .sharingAuthorized:
+            print("🩺🟢 [HEALTHKIT]: [REQUEST sharingAuthorized]")
+        @unknown default:
+            print("🩺🟢 [HEALTHKIT]: [REQUEST default]")
         }
     }
     

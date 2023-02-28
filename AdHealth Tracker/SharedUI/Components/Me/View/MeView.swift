@@ -22,7 +22,7 @@ struct MeView: View {
     //  MARK: - Principal View
     var body: some View {
         ZStack(alignment: .top) {
-            Color.white.edgesIgnoringSafeArea(.all)
+            Color.Black2.edgesIgnoringSafeArea(.all)
             
             ScrollView {
                 VStack(spacing: 20) {
@@ -30,18 +30,20 @@ struct MeView: View {
                         .font(.title2)
                         .bold()
                         .multilineTextAlignment(.center)
+                        .foregroundColor(.white)
                     
                     Text(viewModel.me.ME_DESCRIPTION)
                         .font(.body)
                         .multilineTextAlignment(.leading)
+                        .foregroundColor(.gray)
                     
                     Button(action: dismissAction) {
                         Text("Dismiss")
                             .font(.title2)
                             .bold()
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                             .frame(width: screen.width - 100, height: 45, alignment: .center)
-                            .background(Color.CabifyColor)
+                            .background(Color.AdidasGreen)
                             .clipShape(RoundedRectangle(cornerRadius: 10))
                             .shadow(color: Color.black.opacity(0.4), radius: 15, x: 0, y: 10)
                     }
@@ -107,20 +109,12 @@ extension MeView {
                 Image("blub_red")
                     .offset(x: -150, y: 100)
                     .rotationEffect(Angle(degrees: viewModel.show ? 360+90 : 90))
-                    .blendMode(.plusDarker)
                     .animation(Animation.linear(duration: 100).repeatForever(autoreverses: false), value: viewModel.show)
                     .onAppear { viewModel.show = true }
-                
-                Image("blub_black")
-                    .offset(x: -120, y: 200)
-                    .rotationEffect(Angle(degrees: viewModel.show ? 360 : 0), anchor: .leading)
-                    .blendMode(.plusDarker)
-                    .animation(Animation.linear(duration: 100).repeatForever(autoreverses: false), value: viewModel.show)
                 
                 Image("blub_red")
                     .offset(x: -250, y: -200)
                     .rotationEffect(Angle(degrees: viewModel.show ? 360+90 : 90))
-                    .blendMode(.plusDarker)
                     .animation(Animation.linear(duration: 100).repeatForever(autoreverses: false), value: viewModel.show)
                     .onAppear { viewModel.show = true }
             }
@@ -135,7 +129,7 @@ extension MeView {
                 .offset(x: viewModel.viewState.width/25, y: viewModel.viewState.height/25)
             , alignment: .center
         )
-        .background(Color.white)
+        .background(Color.black.opacity(0.5))
         .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
         .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 30)
         .scaleEffect(viewModel.isDragging ? 0.9 : 1)

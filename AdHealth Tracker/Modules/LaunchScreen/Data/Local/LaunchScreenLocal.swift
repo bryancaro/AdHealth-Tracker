@@ -1,5 +1,5 @@
 //
-//  HomeHealthKit.swift
+//  LaunchScreenLocal.swift
 //  AdHealth Tracker
 //
 //  Created for AdHealth Tracker in 2023
@@ -12,8 +12,6 @@
 
 import Foundation
 
-protocol HomeHealthKitProtocol {}
+protocol LaunchScreenLocalProtocol {}
 
-final class HomeHealthKit: Health, HomeHealthKit.ServerCalls {
-    typealias ServerCalls = HomeHealthKitProtocol
-}
+final class LaunchScreenLocal: LaunchScreenLocalProtocol {}

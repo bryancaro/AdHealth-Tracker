@@ -16,6 +16,16 @@ import CoreData
 final class HomeViewModel: ObservableObject {
     @Published var isLoading = true
     @Published var appError: AppError?
+    @Published var showMe = false
+    
+    
+    ///
+    @Published var totalGoals: Int = 0
+    @Published var totalPoints: Int = 0
+    @Published var completed: Int = 0
+    @Published var points: Int = 0
+    @Published var counter: Int = 0
+    ///
     
     var repository: HomeUseCasesProtocol!
     //  MARK: - Lifecycle
@@ -36,6 +46,14 @@ final class HomeViewModel: ObservableObject {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
             self.isLoading = false
         })
+    }
+    
+    func showMeAction() {
+        showMe = true
+    }
+    
+    func playConfeti() {
+        counter += 1
     }
 }
 
@@ -58,7 +76,7 @@ extension HomeViewModel: HomeUseCasesOutputProtocol {
     }
     
     func getHealthGoalsSuccess(data: HealthGoalsModel) {
-        print(data)
+//        print(data)
     }
     
     func getHealthGoalsFailed(error: Error) {

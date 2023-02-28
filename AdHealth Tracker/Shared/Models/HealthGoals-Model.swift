@@ -59,6 +59,9 @@ struct GoalModel: Identifiable {
     let title: String
     let type: String
     let reward: RewardModel
+    var goalDouble: Double {
+        Double(goal) ?? 0
+    }
     
     init(_ response: GoalResponse) {
         self.id = response.id
