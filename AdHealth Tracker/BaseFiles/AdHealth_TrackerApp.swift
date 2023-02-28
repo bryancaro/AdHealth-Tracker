@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct AdHealth_TrackerApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LaunchScreenView()
         }
     }
 }

@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  AdHealth Tracker
+
+  Created by Bryan Caro on 7/9/22.
+  
+*/
+"launch_screen_title" = "Haz un seguimiento de tu actividad y disfruta de una vida mejor";
+"letsgo_label" = "Vamos";
+"develop_by" = "Desarrollado por ";
