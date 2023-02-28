@@ -28,6 +28,8 @@ I personally designed the app using Figma, a popular design tool, to create a us
 
 ![DesignApp](https://user-images.githubusercontent.com/58017823/221840590-9f40eef0-84cf-4201-b200-3a9df8a187a9.png)
 
+### Video:
+https://user-images.githubusercontent.com/58017823/221849762-7b8d8e82-87f2-4963-ae2b-2312ba34f081.mp4
 
 
 
