@@ -42,4 +42,12 @@ final class HomeUseCasesOutputComposer: HomeUseCasesOutputProtocol {
     func getHealthGoalsFailed(error: Error) {
         outputs.forEach({ $0.getHealthGoalsFailed(error: error)})
     }
+    
+    func updateHealthGoalsSuccess(goals: [GoalModel]) {
+        outputs.forEach({ $0.updateHealthGoalsSuccess(goals: goals)})
+    }
+    
+    func updateHealthGoalsFailed(_ errorString: String) {
+        outputs.forEach({ $0.updateHealthGoalsFailed(errorString)})
+    }
 }

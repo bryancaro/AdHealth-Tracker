@@ -15,7 +15,8 @@ import CoreData
 
 final class HomeViewModel: ObservableObject {
     @Published var isLoading = true
-    @Published var appError: AppError?
+    @Published var showError = false
+    @Published var errorString = ""
     @Published var showMe = false
     
     
@@ -25,6 +26,7 @@ final class HomeViewModel: ObservableObject {
     @Published var completed: Int = 0
     @Published var points: Int = 0
     @Published var counter: Int = 0
+    @Published var goals = [GoalModel]()
     ///
     
     var repository: HomeUseCasesProtocol!
@@ -32,14 +34,6 @@ final class HomeViewModel: ObservableObject {
     init(repository: HomeUseCasesProtocol = HomeUseCasesFactory().makeUseCases()) {
         self.repository = repository
         self.repository.delegate = self
-    }
-    
-    func onAppear() {
-        repository.onAppear()
-    }
-    
-    func onDisappear() {
-        repository.onDisappear()
     }
     
     func hideLoadingView() {
@@ -53,7 +47,9 @@ final class HomeViewModel: ObservableObject {
     }
     
     func playConfeti() {
-        counter += 1
+        DispatchQueue.main.async {
+            self.counter += 1
+        }
     }
 }
 
@@ -61,14 +57,7 @@ final class HomeViewModel: ObservableObject {
 extension HomeViewModel: HomeUseCasesOutputProtocol {
     func onAppearSuccess() {
         print("[🟢] [HomeViewModel] [onAppear]")
-//        fetchItems()
-//
-//        DispatchQueue.main.asyncAfter(wallDeadline: .now() + 10, execute: {
-//            self.addFruit()
-//        })
-//        Task {
-//           await repository.getHealthGoals()
-//        }
+        repository.getHealthGoals()
     }
     
     func onDisappearSuccess() {
@@ -76,11 +65,25 @@ extension HomeViewModel: HomeUseCasesOutputProtocol {
     }
     
     func getHealthGoalsSuccess(data: HealthGoalsModel) {
-//        print(data)
+        DispatchQueue.main.async {
+            self.goals = data.goals
+            self.playConfeti()
+        }
     }
     
     func getHealthGoalsFailed(error: Error) {
         defaultError(error.localizedDescription)
+    }
+    
+    func updateHealthGoalsSuccess(goals: [GoalModel]) {
+        DispatchQueue.main.async {
+            self.goals = goals
+            self.playConfeti()
+        }
+    }
+    
+    func updateHealthGoalsFailed(_ errorString: String) {
+        defaultError(errorString)
     }
     
     func defaultError(_ errorString: String) {
@@ -88,7 +91,8 @@ extension HomeViewModel: HomeUseCasesOutputProtocol {
         haptic(type: .error)
         DispatchQueue.main.async {
             self.isLoading = false
-            self.appError = AppError(errorString: errorString)
+            self.errorString = errorString
+            self.showError = true
         }
     }
 }

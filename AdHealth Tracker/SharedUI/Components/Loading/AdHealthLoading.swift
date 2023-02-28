@@ -15,6 +15,7 @@ import SwiftUI
 struct AdHealthLoading: View {
     //  MARK: - Observed Object
     //  MARK: - Variables
+    @State private var id = UUID()
     @Binding var show: Bool
     @State private var scale: CGFloat = 0.8
     //  MARK: - Principal View
@@ -38,6 +39,8 @@ struct AdHealthLoading: View {
         .background(Color.black.opacity(0.5))
         .edgesIgnoringSafeArea(.vertical)
         .opacity(show ? 1 : 0)
+        .id(id)
+        .onChange(of: id, perform: { _ in })
         .animation(.springAnimation.delay(0.4), value: show)
         .onAppear(perform: onAppear)
         .onDisappear(perform: onDisappear)

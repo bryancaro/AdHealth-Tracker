@@ -29,30 +29,48 @@ struct HomeView: View {
             ScrollView {
                 CoverComponent
                 
-                DailyGoalsView()
+                DailyGoalsView(goals: $viewModel.goals)
+            }
+            .refreshable {
+                updateAllData()
             }
             
             HeaderComponent
             
             UpdateStepsComponent
         }
+        .onChange(of: mainViewModel.showError, perform: getErrorFromMain)
+        .onChange(of: viewModel.showError, perform: getError)
         .sheet(isPresented: $viewModel.showMe, content: {
             MeView()
         })
         .confettiCannon(counter: $viewModel.counter, repetitions: 2, repetitionInterval: 0.7)
         .animation(.springAnimation, value: UUID())
-        .onAppear(perform: viewModel.onAppear)
-        .onDisappear(perform: viewModel.onDisappear)
+        .onAppear(perform: viewModel.repository.onAppear)
+        .onDisappear(perform: viewModel.repository.onDisappear)
     }
 }
 
 //  MARK: - Actions
 extension HomeView {
+    private func getError(showError: Bool) {
+        mainViewModel.showError = showError
+        mainViewModel.errorString = viewModel.errorString
+    }
+    
+    private func getErrorFromMain(showError: Bool) {
+        viewModel.showError = showError
+    }
+    
     private func updateSteps() {
         withAnimation {
             mainViewModel.repository.fetchDailyStepCount()
             viewModel.playConfeti()
         }
+    }
+    
+    private func updateAllData() {
+        viewModel.repository.updateHealthGoals()
     }
 }
 
@@ -93,6 +111,7 @@ extension HomeView {
             .overlay(
                 VStack {
                     Spacer()
+                    
                     HealthDataComponent
                     
                     GoalsDataView(totalGoals: $viewModel.totalGoals,
@@ -103,7 +122,6 @@ extension HomeView {
                 }
                     .offset(y: scrollY > 0 ? -scrollY : 0)
             )
-            
         }
         .frame(height: 400)
     }

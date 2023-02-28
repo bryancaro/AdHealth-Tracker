@@ -17,4 +17,6 @@ protocol HomeUseCasesOutputProtocol: AnyObject {
     func onDisappearSuccess()
     func getHealthGoalsSuccess(data: HealthGoalsModel)
     func getHealthGoalsFailed(error: Error)
+    func updateHealthGoalsSuccess(goals: [GoalModel])
+    func updateHealthGoalsFailed(_ errorString: String)
 }

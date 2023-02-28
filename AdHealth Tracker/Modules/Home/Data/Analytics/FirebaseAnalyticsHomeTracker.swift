@@ -28,4 +28,12 @@ final class FirebaseAnalyticsHomeTracker: HomeUseCasesOutputProtocol {
     func getHealthGoalsFailed(error: Error) {
         // SEND ANALYTICS MANAGER
     }
+    
+    func updateHealthGoalsSuccess(goals: [GoalModel]) {
+        
+    }
+    
+    func updateHealthGoalsFailed(_ errorString: String) {
+        
+    }
 }

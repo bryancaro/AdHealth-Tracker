@@ -20,18 +20,18 @@ struct LaunchScreenView: View {
     @Namespace var namespace
     //  MARK: - Principal View
     var body: some View {
-        ZStack {            
+        ZStack {
             if viewModel.showHome {
                 HomeView(namespace: namespace)
             } else {
                 BackgroundComponent
                 
-                BottomComponent
-                
-                AdHealthLoading(show: $viewModel.isLoading)
-                
-                AdHealthAlert(show: $viewModel.showError, errorString: $viewModel.errorString)
+                BottomComponent  
             }
+            
+            AdHealthLoading(show: $viewModel.isLoading)
+            
+            AdHealthAlert(show: $viewModel.showError, errorString: $viewModel.errorString)
         }
         .environmentObject(viewModel)
         .animation(.springAnimation.delay(0.6), value: viewModel.showHome)
@@ -41,11 +41,7 @@ struct LaunchScreenView: View {
 }
 
 //  MARK: - Actions
-extension LaunchScreenView {
-    private func continueButton() {
-        viewModel.repository.requestHealthKitAuthorization()
-    }
-}
+extension LaunchScreenView {}
 
 //  MARK: - Local Components
 extension LaunchScreenView {
@@ -84,9 +80,6 @@ extension LaunchScreenView {
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
-                .onTapGesture {
-                    HealthKitController.shared.readStatusRequest()
-                }
             
             HStack(spacing: 20) {
                 VStack {
@@ -113,7 +106,7 @@ extension LaunchScreenView {
             }
             .padding(.vertical)
             
-            AdButton(action: continueButton)
+            AdButton(action: viewModel.repository.requestHealthKitAuthorization)
             
             Spacer()
                 .frame(height: 50)

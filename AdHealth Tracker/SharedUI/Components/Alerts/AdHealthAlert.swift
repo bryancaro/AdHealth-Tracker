@@ -54,7 +54,7 @@ extension AdHealthAlert {
     private func onDisappear() {}
     
     private func dismissAlert() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 8, execute: {
             show = false
         })
     }

@@ -15,6 +15,7 @@ import SwiftUI
 struct DailyGoalsView: View {
     //  MARK: - Observed Object
     //  MARK: - Variables
+    @Binding var goals: [GoalModel]
     //  MARK: - Principal View
     var body: some View {
         ZStack {
@@ -56,7 +57,6 @@ extension DailyGoalsView {
 //  MARK: - Preview
 struct DailyGoalsView_Previews: PreviewProvider {
     static var previews: some View {
-        DailyGoalsView()
+        DailyGoalsView(goals: .constant([GoalModel]()))
     }
 }
-
